@@ -1,0 +1,60 @@
+.Main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Main .titleName {
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+    margin: 2rem;
+}
+.Main .PageName{
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+    margin: 2rem;
+}
+.Main .paginacion h3{
+    color: black;
+    
+}
+.Main .paginacion button {
+    background-color: transparent;
+    border-style: none; 
+    cursor: pointer;   
+}
+.Main .paginacion{
+    width: 80%;
+    margin: 10px 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);    
+}
+.Main .personajes {
+    width: 90vw;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+.Main .personajes .infoCard{
+    display: flex;
+    width: 390px;
+    align-items: center;
+    margin: 20px;    
+    /* background-color: red;    */
+}
+.Main .personajes .infoCard img{
+    width: 30%; 
+}
+.Main .personajes .informacion{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px; 
+}
