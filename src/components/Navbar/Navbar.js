@@ -7,6 +7,7 @@ import './Navbar.css'
 const BrandExample = () => {
   return (
     <>
+    {/* hola */}
     <Navbar bg="dark" variant="dark">
         <Container>
           <div className='img'>
