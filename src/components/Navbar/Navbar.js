@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/rick-icon.svg'
+import logo from '../../assets/rick-icon.png'
 import '../Navbar/Navbar.css'
 import { Link } from 'react-router-dom';
 

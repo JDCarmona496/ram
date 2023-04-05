@@ -5,7 +5,7 @@ import {
   MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.png'
 import { Container } from 'react-bootstrap';
 
 export default function App() {
