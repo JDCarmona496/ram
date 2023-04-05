@@ -5,7 +5,7 @@ import tres from '../../assets/tres.jpg'
 import as from '../../assets/as.png'
 import asd from '../../assets/asd.png'
 import asda from '../../assets/asda.jpg'
-import asds from '../../assets/asds.png'
+import asds from '../../assets/asds.jpg'
 function UncontrolledExample() {
   return (
     
