@@ -1,28 +1,24 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../assets/logo.png'
-import './Navbar.css'
+import logo from '../../assets/rick-icon.png'
+import '../Navbar/Navbar.css'
+import { Link } from 'react-router-dom';
 
-const BrandExample = () => {
+const BrandExample = ({brand}) => {
   return (
     <>
-    {/* hola */}
-    <Navbar bg="dark" variant="dark">
-        <Container>
-          <div className='img'>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src={logo}
-              width="120"
-              height="40"
-              className="d-inline-block align-left "
-            />{' '}
-          </Navbar.Brand>
-          </div>
-        </Container>
-      </Navbar>
+
+      <nav>
+        <div className="logo">
+        <Link to="/Home">
+        <img alt="logo" src={logo} width="45" height="45" className="d-inline-block align-left " />
+        </Link>
+        </div>
+        <ul className="menu  " >
+          <li><Link to="/Personaje">Personajes</Link></li>
+          <li><Link to="/Capitulo">Capitulo</Link></li>
+          <li><Link to="/Generador">Generador</Link></li>
+        </ul>
+        </nav>
     </>
   )
 }

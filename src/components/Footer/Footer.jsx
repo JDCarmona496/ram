@@ -1,36 +1,43 @@
-import React from "react"
+import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBIcon,
+  MDBBtn
+} from 'mdb-react-ui-kit';
+import logo from '../../assets/logo.png'
+import { Container } from 'react-bootstrap';
 
-const Footer = () => <footer className="page-footer font-small blue pt-4">
-    
-    <div className="container-fluid text-center text-md-left">
-        <div className="row">
-            <div className="col-md-6 mt-md-0 mt-3">
-                <h5 className="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns to organize your footer content.</p>
-            </div>
+export default function App() {
+  return (
+    <MDBFooter className='bg-dark text-center text-white'>
+      <MDBContainer className='p-4 pb-0'>
+        <section className='mb-4'>
 
-            <hr className="clearfix w-100 d-md-none pb-0"/>
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='instagram' />
+          </MDBBtn>
 
-            <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
-                <ul className="list-unstyled">
-                    <li><a href="#!">Link 1</a></li>
-                </ul>
-            </div>
+          <MDBBtn outline color="light" floating className='m-1' to='github' role='button'>
+            <MDBIcon fab icon='linkedin-in' />
+          </MDBBtn>
 
-            <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
-                <ul className="list-unstyled">
-                    <li><a href="#!">Link 1</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div className="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-
-</footer>
-
-export default Footer
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='github' />
+          </MDBBtn>
+          
+        </section>
+        <Container>  
+        <img src={logo} alt="Rick and Morty" width="280" height="60"  />
+        </Container>
+        <br></br>
+      </MDBContainer>
+     
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2023 Copyright   
+        <a className='text-white' href='https://rickandmortyapi.com/'><p>API Rick and Morty</p></a>
+      </div>
+      
+    </MDBFooter>
+  );
+}

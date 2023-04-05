@@ -3,18 +3,17 @@ import Navbar from '../components/Navbar/Navbar'
 import Slider from '../components/Slider/Slider'
 import Texto from '../components/Texto/Texto'
 import Footer from '../components/Footer/Footer'
-import Personajes from '../components/Personajes/Personajes'
+import Video from '../components/Video/Video'
+//import Personajes from '../components/Personajes/Personajes'
 const Home = () => {
   return (
-    <header>
-    <Navbar/>
+    <>
+    <Navbar brand=""/>
     <Slider/>
-    <br></br>
-    <Texto/>
-    <br></br>
-    <Personajes />
+    <Texto />
+    <Video />
     <Footer />
-    </header>
+    </>
   )
 }
 

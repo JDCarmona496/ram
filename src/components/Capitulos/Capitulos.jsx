@@ -1,18 +1,19 @@
 import React from 'react';
 import '../Personajes/Personajes.css'
-import Hook from '../../Hook/Hook';
+import Hook from '../../Hook/HookCapitulos';
 import Card from 'react-bootstrap/Card';
+import draw from '../../assets/draw.png'
 import { CardImg } from 'react-bootstrap';
 
 const  BasicExample = (props) => {
-const { datos, pagina, cambiarPagina } = Hook('https://rickandmortyapi.com/api/character');
+const { datos, pagina, cambiarPagina } = Hook('https://rickandmortyapi.com/api/episode');
 
   return (
 
     <>
-
+    
     <div>
-    <h3>Lista de Personajes</h3>
+    <h3>Lista de Capitulos</h3>
     </div>
 
     <div className='Main'>
@@ -22,16 +23,14 @@ const { datos, pagina, cambiarPagina } = Hook('https://rickandmortyapi.com/api/c
         <button onClick={() => cambiarPagina('siguiente')}><h3>Siguiente</h3></button>
       </div>
       <div className='personajes '>
-        {datos.map(personaje => (
+        {datos.map(capitulos => (
             <Card>
-          <div className='infoCard' key={personaje.id}>
-            <CardImg src={personaje.image} alt='' />
+          <div className='infoCard' key={capitulos.id}>
+          <CardImg src={draw} alt='' />
             <div className='informacion'>
-              <h2>{personaje.name}</h2>
-              <p>Estado: {personaje.status}</p>
-              <p>Especie: {personaje.species}</p>
-              <p>Género: {personaje.gender}</p>
-              <p>Episodios: {personaje.episode.length}</p>
+              <h2>{capitulos.name}</h2>
+              <p>Emision: {capitulos.air_date}</p>
+              <p>Episodio: {capitulos.episode}</p>
             </div>
           </div>
           </Card>
