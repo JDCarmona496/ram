@@ -2,11 +2,12 @@ import React from 'react';
 import {
   MDBFooter,
   MDBContainer,
-  MDBIcon,
-  MDBBtn
+  MDBIcon
 } from 'mdb-react-ui-kit';
 import logo from '../../assets/logo.png'
 import { Container } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 export default function App() {
   return (
@@ -14,18 +15,11 @@ export default function App() {
       <MDBContainer className='p-4 pb-0'>
         <section className='mb-4'>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' to='github' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-          
+        <ButtonGroup aria-label="Basic example">
+      <Button variant="secondary" ><MDBIcon fab icon='instagram' /></Button>
+      <Button variant="secondary"><MDBIcon fab icon='linkedin-in' /></Button>
+      <Button variant="secondary"><MDBIcon fab icon='github' /></Button>
+    </ButtonGroup>
         </section>
         <Container>  
         <img src={logo} alt="Rick and Morty" width="280" height="60"  />
