@@ -1,11 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
-import uno from '../../assets/uno.jpg'
-import dos from '../../assets/dos.jpg'
-import tres from '../../assets/tres.jpg'
-import as from '../../assets/as.png'
-import asd from '../../assets/asd.png'
-import asda from '../../assets/asda.jpg'
-import asds from '../../assets/asds.jpg'
+import uno from '../../assets/uno.svg'
+import dos from '../../assets/dos.svg'
+import tres from '../../assets/tres.svg'
+import as from '../../assets/as.svg'
+import asd from '../../assets/asd.svg'
+import asda from '../../assets/asda.svg'
+import asds from '../../assets/asds.svg'
 function UncontrolledExample() {
   return (
     

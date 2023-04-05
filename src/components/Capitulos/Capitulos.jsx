@@ -2,7 +2,7 @@ import React from 'react';
 import '../Personajes/Personajes.css'
 import Hook from '../../Hook/HookCapitulos';
 import Card from 'react-bootstrap/Card';
-import draw from '../../assets/draw.png'
+import draw from '../../assets/draw.svg'
 import { CardImg } from 'react-bootstrap';
 
 const  BasicExample = (props) => {
