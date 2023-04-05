@@ -2,7 +2,7 @@ import React from 'react';
 import '../Personajes/Personajes.css'
 import Hook from '../../Hook/HookCapitulos';
 import Card from 'react-bootstrap/Card';
-import draw from '../../assets/draw.svg'
+import draw from '../../assets/draw.png'
 import { CardImg } from 'react-bootstrap';
 
 const  BasicExample = (props) => {
@@ -22,6 +22,7 @@ const { datos, pagina, cambiarPagina } = Hook('https://rickandmortyapi.com/api/e
         <h1 className='PageName'>Pagina {pagina}</h1>
         <button onClick={() => cambiarPagina('siguiente')}><h3>Siguiente</h3></button>
       </div>
+
       <div className='personajes '>
         {datos.map(capitulos => (
             <Card>
